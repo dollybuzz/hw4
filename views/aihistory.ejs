@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--
-HW 1, create 4 webpages revelant to computer science
-Artificial Intelligence AI History page
-History of AI
--->
-
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-        <title> Artificial Intelligence </title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    </head>
-    
-    <body>
-        <header>
-            <h1> Artificial Intelligence </h1>
-            <h3>The process of Machine Learning</h3>
-        </header>
-
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="howitsused.html">How is AI used?</a></li>
-                    <li><a href="howitworks.html">How does AI work?</a></li>
-                    <li><a href="aihistory.html" style="color:#86d7f0">History of AI</a></li>
-                </ul>
-            </nav>
-        
-            <article>
-                <br/>
-                <blockquote cite="https://www.brainyquote.com/quotes/tim_cook_843468?src=t_ai">
-                    What all of us have to do is to make sure we are using AI in a way that is for the benefit of humanity, not to the detriment of humanity.
+<% include partials/header.ejs %>
+<script>
+    document.getElementById("home").innerHTML = "<a href='/index'>Home</a>";
+    document.getElementById("used").innerHTML = "<a href='/howitsused'>How is AI used?</a>";
+    document.getElementById("work").innerHTML = "<a href='/howitworks'>How does AI work?</a>";
+    document.getElementById("ai").innerHTML = "<a href='/aihistory' style='color:#86d7f0'>History of AI</a>";
+</script>
                     <br/>~ Tim Cook
                 </blockquote>
             </article>
@@ -82,14 +53,4 @@ History of AI
             </div>
         </main>
         
-        <footer>
-            <br/>
-            CST336 Internet Programming. 2019 &copy; Dalia Faria.<br/>
-            <strong>Disclaimer:</strong> The information in this webpage is credited to <a href="https://builtin.com/artificial-intelligence" style="color:#86d7f0">builtin.com</a>.<br />
-            It is used for academic purposes only.
-            <br />
-            <img src="img/csumb.png" alt="CSUMB Logo">
-            <br/>[Background - Contour of AI Face]. Retrieved from <a href="https://sloanreview.mit.edu/article/the-risk-of-machine-learning-bias-and-how-to-prevent-it/" style="color:#86d7f0">sloanreview.mit.edu</a>.
-        </footer>
-    </body>
-</html>
+<% include partials/footer.ejs %>
