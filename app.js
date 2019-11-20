@@ -6,8 +6,9 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 //Notes - Changed file names from .html to .ejs, 
-//added in span id tags in header.ejs to distinguish nav menu title color
-//(refer to script tags present in other .ejs files),
+//added in span id tags in header.ejs to upkeep the distinction in the nav menu
+//(title color change) to indicate to the user which page they are on
+//(refer to the script tags in the non-partial views),
 //and passed in new variable from route to view in render lines.
 //The faker is in the header.ejs view as a random quote.
 
