@@ -1,4 +1,4 @@
-<% include partials/header.ejs %>
+<%- include('partials/header.ejs') -%>
 <script>
     document.getElementById("home").innerHTML = "<a href='/index'>Home</a>";
     document.getElementById("used").innerHTML = "<a href='/howitsused' style='color:#86d7f0'>How is AI used?</a>";
@@ -28,4 +28,4 @@
             </div>
         </main>
         
-<% include partials/footer.ejs %>
+<%- include('partials/footer.ejs') -%>
